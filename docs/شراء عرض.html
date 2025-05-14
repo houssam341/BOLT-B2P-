@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شراء عرض</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>شراء عرض</h2>
+    <form action="submit_purchase.php" method="POST">
+        <label for="offer_id">رقم العرض</label>
+        <input type="text" name="offer_id" required>
+
+        <label for="payment_details">تفاصيل الحوالة</label>
+        <input type="text" name="payment_details" required>
+
+        <button type="submit">إتمام الشراء</button>
+    </form>
+</body>
+</html>

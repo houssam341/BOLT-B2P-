@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقديم عرض</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>تقديم عرض للبيع</h2>
+    <form action="submit_offer.php" method="POST">
+        <label for="type">نوع العرض</label>
+        <select name="type" id="type">
+            <option value="بيع">بيع</option>
+            <option value="شراء">شراء</option>
+        </select>
+
+        <label for="price">السعر لكل USDT (دولار)</label>
+        <input type="number" name="price" required>
+
+        <label for="quantity">الكمية (USDT)</label>
+        <input type="number" name="quantity" required>
+
+        <label for="payment">طريقة الدفع</label>
+        <select name="payment" id="payment">
+            <option value="هرم">هرم</option>
+            <option value="سيرياتيل كاش">سيرياتيل كاش</option>
+            <option value="فؤاد">فؤاد</option>
+            <option value="بيمو">بيمو</option>
+            <option value="بنك إسلامي">بنك إسلامي</option>
+        </select>
+
+        <button type="submit">تقديم العرض</button>
+    </form>
+</body>
+</html>
